@@ -1,0 +1,111 @@
+[
+  {
+    "ContainingType": "exceltosql.Controllers.icd",
+    "Method": "Gethis_icd_diagnoses",
+    "RelativePath": "api/icd",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[exceltosql.Models.his_icd_diagnosis, exceltosql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "exceltosql.Controllers.icd",
+    "Method": "Posthis_icd_diagnosis",
+    "RelativePath": "api/icd",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "his_icd_diagnosis",
+        "Type": "exceltosql.Models.his_icd_diagnosis",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "exceltosql.Models.his_icd_diagnosis",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "exceltosql.Controllers.icd",
+    "Method": "Gethis_icd_diagnosis",
+    "RelativePath": "api/icd/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "exceltosql.Models.his_icd_diagnosis",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "exceltosql.Controllers.icd",
+    "Method": "Puthis_icd_diagnosis",
+    "RelativePath": "api/icd/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "his_icd_diagnosis",
+        "Type": "exceltosql.Models.his_icd_diagnosis",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "exceltosql.Controllers.icd",
+    "Method": "Deletehis_icd_diagnosis",
+    "RelativePath": "api/icd/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

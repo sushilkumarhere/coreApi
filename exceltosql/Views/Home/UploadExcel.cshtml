@@ -1,0 +1,28 @@
+﻿
+@if(!string.IsNullOrEmpty(ViewBag.Massage) && ViewBag.Massage=="success")
+{
+    <div class=" alert alert-success" role="alert">
+        All Record Inserted Succesfully
+
+    </div>
+}
+ else if (!string.IsNullOrEmpty(ViewBag.Massage) && ViewBag.Massage == "Empty")
+{
+    <div class=" alert alert-warning" role="alert">
+        File is Empty
+
+    </div>
+}
+
+<form method="post" enctype="multipart/form-data">
+   <div class="row">
+       <label>select Excel File</label>
+       <input type ="file" name="file" />
+   </div>
+   <br/>
+   <div class="row">
+    <div class="co-3">
+        <input type="submit" asp-controller="Home" asp-action="UploadExcel" class="btn btn-dark" value="UploadExcel" />
+       </div>
+       </div>
+</form>
